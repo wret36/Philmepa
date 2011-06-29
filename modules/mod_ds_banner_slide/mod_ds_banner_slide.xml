@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>DS Ajax Banner Slide Rotator</name>
+	<author>DesignerSandbox</author>
+	<creationDate>September 6, 2010</creationDate>	
+	<copyright>This extension in released under the GNU/GPL License - http://www.gnu.org/copyleft/gpl.html</copyright>
+	<authorEmail>info@designersandbox.com</authorEmail>
+	<authorUrl>http://www.designersandbox.com</authorUrl>
+	<version>0.4.4</version>
+	<description>
+		<![CDATA[Enable to multi-select Banner Clients in Selection Box | Enable to Set banner Limit | Enable to multi-select Banner Categories in Selection Box | Enable to select banner ordering | Enable to set Unique id for each banner, multi banner slide rotators on 1 page. | Enable to Hide/Show Banner Description | Enable to Change Description Font Color | Enable to Change Font Size | Enable to Position the Description Text | Enable to do Text Align | Enable to Hide/Show Banner Control | Enable to Hide/Show Previous and Next Button | Enable to Hide/Show First and Last Button | Enable to Hide/Show Number Indexing | Enable to Hide/Show Start and Stop Button | Enable to disable all banner links incase  of slideshow purpose only.]]>
+		</description>
+		<files>
+			<filename module="mod_ds_banner_slide">mod_ds_banner_slide.php</filename>
+			<filename module="mod_ds_banner_slide">images/blank.gif</filename>
+			<filename module="mod_ds_banner_slide">elements/categories.php</filename>
+			<filename module="mod_ds_banner_slide">elements/clients.php</filename>
+			<filename module="mod_ds_banner_slide">mod_ds_banner_slide/mbScrollable.js</filename>
+		</files>
+		<params addpath="/modules/mod_ds_banner_slide/elements">
+			<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+            <param name="banner_cids" type="clients" default="" label="Banner clients" description="Clients" />
+			<param name="banner_limit" type="text" default="" label="Banner limit" description="Limits how many banners will be shown." />
+            <param name="catids" type="categories" section="com_banner" default="" label="Categories" description="Categories" />
+            <param name="ordering" type="list" default="0" label="Ordering" description="List the banner in the ordering you had set upon the backend of joomla banner component">
+                <option value="0">Ordering</option>
+                <option value="random">Randomise</option>
+            </param>
+            <param name="@spacer" type="spacer" default="" label="" description="" />
+			<param name="uniqueid" type="text" default="rotator" label="Unique ID for this AJAX Banner" description="This ID is used by the module's CSS -as an #ID- and javascript code, so keep it unique and simple, like 'rotator', using only latin characters, without any spaces or numbers!" />
+            <param name="@spacer" type="spacer" default="" label="" description="" />
+            <param name="width" type="text" default="950" label="Image width" description="Set here the target width of all images in pixels." />
+            <param name="height" type="text" default="250" label="Image height" description="Set here the target height of all images in pixels, or 'auto'. *For Internet Explorer to work, please enter the exact banner height." />
+            <param name="elementsInPage" type="text" default="1" label="Elements In Page" description="how many banners should be visible on each slide" />
+            <param name="elementMargin" type="text" default="4" label="Elements Margin" description="the space between each banner" />
+            <param name="slideTimer" type="text" default="600" label="Slide Timer" description="Slide Timer" />
+            <param name="scrollTimer" type="text" default="6000" label="Scroll Timer" description="Scroll Timer" />
+			<param name="@spacer" type="spacer" default="" label="" description="" />
+			<param name="autoscroll" type="list" default="Yes" label="Auto scroll" description="Auto scroll">
+				<option value="Yes">Yes</option>
+				<option value="No">No</option>
+			</param>
+            <param name="@spacer" type="spacer" default="" label="" description="" />
+			<param name="deshide" type="list" default="" label="Hide Description" description="Option to show or hide the banner description.">
+				<option value="">Show</option>
+				<option value="display:none!important;">Hide</option>
+			</param>
+
+			<param name="descolor" type="text" default="#FFFFFF" label="Description Font Color" description="To control your description text color. If you enter hex code, please enter a # infront, also you can enter the color name ie. white."/>
+			<param name="dessize" type="text" default="180%" label="Description Font Size" description="Control the font size, font size are display in % or px."/>
+
+			<param name="destoppad" type="text" default="60" label="Description Position Top" description="Control the top padding size, you will need to enter the pixel that you want."/>
+			<param name="desrigpad" type="text" default="60" label="Description Position Right" description="Control the right padding size, you will need to enter the pixel that you want."/>
+			<param name="desbotpad" type="text" default="60" label="Description Position Bottom" description="Control the bottom padding size, you will need to enter the pixel that you want."/>
+			<param name="deslefpad" type="text" default="60" label="Description Position Left" description="Control the left padding size, you will need to enter the pixel that you want."/>
+
+			<param name="desalign" type="list" default="left" label="Description Text Align" description="Control the description text alignment.">
+				<option value="left">left</option>
+				<option value="center">center</option>
+				<option value="right">right</option>
+			</param>
+            <param name="@spacer" type="spacer" default="" label="" description="" />
+
+			<param name="controls_hide" type="list" default="" label="Hide Control" description="Option to show or hide the control.">
+				<option value="">Show</option>
+				<option value="display:none!important;">Hide</option>
+			</param>
+			<param name="opacity" type="list" default="100" label="Controller Opacity" description="Controller Opacity">
+				<option value="10">10%</option>
+				<option value="20">20%</option>
+				<option value="30">30%</option>
+				<option value="40">40%</option>
+				<option value="50">50%</option>
+				<option value="60">60%</option>
+				<option value="70">70%</option>
+				<option value="80">80%</option>
+				<option value="90">90%</option>
+				<option value="100">No Transparency</option>
+			</param>
+			<param name="controlfloat" type="list" default="left" label="Control Float at" description="Control the Controller to be display at.">
+				<option value="left">left</option>
+				<option value="center">center</option>
+				<option value="right">right</option>
+			</param>
+
+			<param name="prev_next" type="list" default="Yes" label="Previous and Next Buttons" description="Option to show or hide Previous and Next button.">
+				<option value="Yes">Active</option>
+				<option value="No">Inactive</option>
+			</param>
+
+			<param name="first_last" type="list" default="Yes" label="First and Last Buttons" description="Option to show or hide First and Last button.">
+				<option value="Yes">Active</option>
+				<option value="No">Inactive</option>
+			</param>
+
+			<param name="pageIndex" type="list" default="Yes" label="Numbering" description="Option to show or hide numbering.">
+				<option value="Yes">Active</option>
+				<option value="No">Inactive</option>
+			</param>
+			
+			<param name="start_stop" type="list" default="Yes" label="Start and Stop Buttons" description="Option to show or hide Start and Stop button.">
+				<option value="Yes">Active</option>
+				<option value="No">Inactive</option>
+			</param>
+
+
+			<param name="desinnerwidth" type="text" default="100%" label="Description Inner Width" description="Control the description inner width."/>
+
+
+			<param name="banner_links" type="list" default="Yes" label="Banner Links" description="Option to deactivate banner links incase the VC Banner Rotator is used only for a slideshow">
+				<option value="Yes">Active</option>
+				<option value="No">Inactive</option>
+			</param>
+            <param name="shadow" type="list" default="No" label="Show Shadow" description="Shows shadow">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </param>
+			<param name="@spacer" type="spacer" default="" label="" description="" />
+			<param name="controls" type="text" default="controls" label="controls unique id" description="Control unique id" />
+			<param name="target" type="list" default="0" label="Where should the above link open?" description="Choose whether the 'master' link will open in a new or in the same window.">
+				<option value="_self">Same window</option>
+				<option value="_blank">New window</option>
+			</param>		
+			<param name="@spacer" type="spacer" default="" label="" description="" />
+		</params>
+</install>
