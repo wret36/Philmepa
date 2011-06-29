@@ -13,9 +13,9 @@ var $debug_lang = '0';
 /* Database Settings */
 var $dbtype = 'mysql';
 var $host = 'localhost';
-var $user = 'playme_philmepa';
-var $password = 'agile+kaizen';
-var $db = 'playme_philmepaDB';
+var $user = 'philmepa';
+var $password = 'philmepa';
+var $db = 'philmepa';
 var $dbprefix = 'jos_';
 /* Server Settings */
 var $live_site = '';
