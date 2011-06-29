@@ -77,12 +77,8 @@
     </div>
   </div>
   <div id="body_area">
-    <div class="industrialist">
-      <div class="head1">Industrialist of this Month <span class="head2">Repudiandae sint et molestiae non recusandae</span></div>
-      <div class="industrialist_pic">
-        <div align="justify">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animist.</div>
-      </div>
-      <div class="industrialist_more">Reiciendis voluptatibus maiores alias consequatur <a href="#" class="more_link">+more</a> </div>
+    <div class="home-content">
+    	<jdoc:include type="component" />
     </div>
     <div class="industry1">
       <div class="head3">

@@ -10,7 +10,7 @@ body{
 	padding-left: 0;
 	background-color: #f1e5bb;
 	background-attachment: scroll;
-	background-image: url(images/bg.jpg);
+	background-image: url(../images/bg.jpg);
 	background-repeat: repeat-x;
 	background-position: top;
 }
@@ -396,7 +396,7 @@ ul{
 	background-repeat: repeat-x;
 	background-position: top;
 }
-.industrialist {
+.home-content {
 	margin: 0px;
 	float: left;
 	height: 295px;
@@ -406,7 +406,7 @@ ul{
 	padding-bottom: 0px;
 	padding-left: 25px;
 }
-.head1 {
+.contentheading {
 	font-family: Arial;
 	font-size: 24px;
 	font-weight: normal;
@@ -420,68 +420,27 @@ ul{
 	padding-bottom: 10px;
 	padding-left: 0px;
 }
-.head2 {
+.leading p {
 	font-family: Arial;
 	font-size: 16px;
 	font-weight: normal;
 	color: #6f745e;
 	text-decoration: none;
 }
-.head3 {
-	font-family: Arial;
-	font-size: 24px;
-	font-weight: normal;
-	color: #3c341f;
-	text-decoration: none;
-	margin: 0px;
-	float: left;
-	width: 220px;
-	padding-top: 0px;
-	padding-right: 0px;
-	padding-bottom: 40px;
-	padding-left: 0px;
-}
-.head4 {
-	font-family: Arial;
-	font-size: 11px;
-	font-weight: bold;
-	color: #3a75b2;
-	text-decoration: none;
-}
-.industrialist_pic {
-	font-family: Arial;
-	font-size: 14px;
-	font-weight: normal;
-	color: #09437f;
-	text-decoration: none;
-	background-image: url(../images/industrial.jpg);
-	background-repeat: no-repeat;
-	margin: 0px;
-	float: left;
-	height: 145px;
-	width: 230px;
-	padding-top: 18px;
-	padding-right: 0px;
-	padding-bottom: 0px;
-	padding-left: 150px;
-	background-position: left bottom;
-}
-.industrialist_more {
-	font-family: Arial;
-	font-size: 11px;
-	font-weight: bold;
-	color: #3c341f;
-	text-decoration: none;
-	background-image: url(../images/industrial_more.jpg);
-	background-repeat: no-repeat;
-	margin: 0px;
-	float: left;
-	height: 31px;
-	width: 380px;
-	padding-top: 18px;
-	padding-right: 11px;
-	padding-bottom: 0px;
-	padding-left: 11px;
+.leading p:last-child {
+    background-image: url("../images/industrial_more.jpg");
+    background-repeat: no-repeat;
+    color: #3C341F;
+    float: left;
+    font-family: Arial;
+    font-size: 11px;
+    font-weight: bold;
+    height: 31px;
+    margin: 0;
+    padding: 18px 11px 0;
+    text-align: right;
+    text-decoration: none;
+    width: 380px;
 }
 .more_link {
 	font-family: Arial;
@@ -532,7 +491,7 @@ ul{
 	padding-bottom: 15px;
 	padding-left: 0px;
 }
-.more_link1 {
+.readon {
 	font-family: Arial;
 	font-size: 11px;
 	font-weight: bold;
@@ -541,7 +500,7 @@ ul{
 	background-color: #FFFFFF;
 
 }
-.more_link1:hover {
+.readon:hover {
 	font-family: Arial;
 	font-size: 11px;
 	font-weight: bold;
