@@ -112,8 +112,6 @@ class modLatestNewsWithIntrotextHelper
 			}
 			$lists[$i]->text = htmlspecialchars( $row->title );
 			$lists[$i]->introtext = $row->introtext;
-			//geoff add date created
-			$lists[$i]->created = $row->created;
 			$i++;
 		}
 

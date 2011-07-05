@@ -47,6 +47,11 @@
 		<filename>html/com_search/search/index.html</filename>
 		<filename>html/com_search/index.html</filename>
 		<filename>html/editor_content.css</filename>
+		<filename>html/mod_latestnews_with_introtext/tmpl/default.php</filename>
+		<filename>html/mod_latestnews_with_introtext/tmpl/index.html</filename>
+		<filename>html/mod_latestnews_with_introtext/helper.php</filename>
+		<filename>html/mod_latestnews_with_introtext/mod_latestnews_with_introtext.php</filename>
+		<filename>html/mod_latestnews_with_introtext/index.html</filename>
 		<filename>html/mod_latestnews/default.php</filename>
 		<filename>html/mod_latestnews/index.html</filename>
 		<filename>html/mod_login/default.php</filename>

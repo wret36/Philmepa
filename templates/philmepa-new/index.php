@@ -13,47 +13,7 @@
 	 <jdoc:include type="modules" name="primary-menu" />
    </div>
   </div>
-  <div id="calendar">
-  <div class="calendar_area">
-    <div class="date">
-      <div align="center">
-        <p class="date_head">16</p>
-        <p>        january</p>
-      </div>
-    </div>
-    <div class="date_text">
-      <p class="date_head1">Industrial Seminar</p>
-      <p>Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain...</p>
-      <p><a href="#" class="datelink">+ more</a></p>
-    </div>
-  </div>
-  <div class="calendar_area">
-    <div class="date">
-      <div align="center">
-        <p class="date_head">28</p>
-        <p> january</p>
-      </div>
-    </div>
-    <div class="date_text">
-      <p class="date_head1">Deprovatix Inauguration</p>
-      <p>To take a trivial example, which of us ever undertakes laborious physical exercise which toil procure him great...</p>
-      <p><a href="#" class="datelink">+ more</a></p>
-    </div>
-  </div>
-  <div class="calendar_area">
-    <div class="date">
-      <div align="center">
-        <p class="date_head">07</p>
-        <p> february</p>
-      </div>
-    </div>
-    <div class="date_text">
-      <p class="date_head1">Optimal Delivery</p>
-      <p>On the other hand, we denounce with righteous indignation and dislike men who are so...</p>
-      <p><a href="#" class="datelink">+ more</a></p>
-    </div>
-  </div>
-  </div>
+	<jdoc:include type="modules" name="latest-news" />
   <div id="banner">
     <div class="banner_textarea"> 
       <p class="banner_head">Libero Tempor Soluta Nobis</p>
