@@ -153,6 +153,11 @@ ul{
 	padding-left: 0px;
 	line-height: 40px;
 }
+
+.take-action-and-sponsors .date {
+	display: none;
+}
+
 .date_head {
 	font-family: Arial;
 	font-size: 40px;
@@ -372,29 +377,44 @@ ul{
 	padding: 0px;
 	height: 325px;
 }
+#main-content {
+	width: 1004px;
+	margin: 0 auto;
+}
+
 #innerbody_area{
-	width:1004px;
-	margin-top: 0;
-	margin-right: auto;
-	margin-bottom: 0;
-	margin-left: auto;
-	font-family: Georgia;
-	font-size: 11px;
-	font-style: normal;
-	line-height: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	color: #908b51;
-	text-decoration: none;
-	float: none;
-	padding: 0px;
-	height: 325px;
-	background-attachment: scroll;
-	background-color: #e4e7d4;
-	background-image: url(../images/inner_bodybg.jpg);
-	background-repeat: repeat-x;
-	background-position: top;
+    background-attachment: scroll;
+    background-color: #E4E7D4;
+    background-image: url("../images/inner_bodybg.jpg");
+    background-position: center top;
+    background-repeat: repeat-x;
+    color: #908B51;
+    float: left;
+    font-family: Georgia;
+    font-size: 11px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    line-height: normal;
+    margin: 0 auto;
+    min-height: 325px;
+    padding: 20px 0;
+    text-decoration: none;
+    text-transform: none;
+    width: 1004px;
+}
+
+.industries_area,
+.right_textarea {
+	float: left;	
+}
+
+.industries_area {
+	width: 300px
+}
+
+.right_textarea {
+	width: 700px;
 }
 .home-content {
 	margin: 0px;
@@ -406,7 +426,7 @@ ul{
 	padding-bottom: 0px;
 	padding-left: 25px;
 }
-.contentheading {
+.blog .contentheading {
 	font-family: Arial;
 	font-size: 24px;
 	font-weight: normal;
