@@ -19,9 +19,9 @@ defined('_JEXEC') or die('Restricted access'); ?>
       </div>
     </div>
     <div class="date_text">
-      <p class="date_head1"><?php echo $item->text; ?></p>
-      <p><?php echo substr($item->introtext, 0, 200) . "..."; ?></p>
-	  <p><a href="<?php echo $item->link; ?>" class="latestnews-link<?php echo $params->get('moduleclass_sfx'); ?>"></a></p>
+      <div class="date_head1"><?php echo $item->text; ?></div>
+      <div><?= substr($item->introtext, 0, 160) . "..."; ?></div>
+	  <a href="<?= $item->link; ?>" class="readon latestnews-link<?= $params->get('moduleclass_sfx'); ?>">+more</a>
     </div>
   </div>
 <?php endforeach; ?>

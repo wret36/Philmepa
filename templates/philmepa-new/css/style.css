@@ -10,9 +10,12 @@ body{
 	padding-left: 0;
 	background-color: #f1e5bb;
 	background-attachment: scroll;
-	background-image: url(../images/bg.jpg);
-	background-repeat: repeat-x;
-	background-position: top;
+	background: url(../images/bg.jpg) repeat-x top;
+}
+
+body.inner-page {
+    background-color: #E4E7D4;
+    background-image: url("../images/innerbg.jpg");
 }
 div, h1, h2, h3, h4, p, form, label, input, textarea, img, span{
 	margin:0; padding:0;
@@ -34,25 +37,25 @@ ul{
 }
 /*------------------------------------------------logo_banner--------------------*/
 #logo_banner{
-	width:1004px;
-	margin-top: 0;
-	margin-right: auto;
-	margin-bottom: 0;
-	margin-left: auto;
-	font-family: Georgia;
-	font-size: 11px;
-	font-style: normal;
-	line-height: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	color: #908b51;
-	text-decoration: none;
-	float: none;
-	padding: 0px;
-	height: 119px;
-	background-image: url(../images/logo_banner.jpg);
-	background-repeat: no-repeat;
+    background: url("../images/logo_banner.jpg") 0 24px no-repeat;
+    color: #908B51;
+    float: none;
+    font-family: Georgia;
+    font-size: 11px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    height: 119px;
+    line-height: normal;
+    margin: 0 auto;
+    padding: 0;
+    text-decoration: none;
+    text-transform: none;
+    width: 1004px;
+}
+
+#logo_container {
+	float: left;
 }
 .menu_area {
 	margin: 0px;
@@ -82,7 +85,8 @@ ul{
     text-decoration: none;
     width: 120px;
 }
-.menu li a:hover {
+.menu li a:hover,
+.menu li.active a {
 	background-image: url(../images/menu_hover.png);
 }
 .menu_hover {
@@ -154,8 +158,62 @@ ul{
 	line-height: 40px;
 }
 
-.take-action-and-sponsors .date {
+.take-action-and-sponsors,
+.sponsors {
+    border: 5px solid #CAD0B6;
+    float: left;
+    margin: 10px;
+    min-height: 275px;
+    padding: 10px;
+    width: 232px;
+}
+
+.sponsors-list {
+    float: left;
+    height: 100px;
+    margin: 8px;
+    width: 100px;
+}
+
+.sponsors-list a p * {
 	display: none;
+}
+
+.sponsors-list a p img {
+	display: block;
+}
+
+.take-action-and-sponsors .calendar_area {
+    padding: 0;
+    width: 100%;
+}
+
+.sponsors .readon {
+	display: none;
+}
+
+.take-action-and-sponsors .calendar_area .date_text {
+	color: #6F745E;
+}
+
+.take-action-and-sponsors .calendar_area .date_head1,
+.sponsors h3 {
+	color: #3C341F;
+}
+
+.take-action-and-sponsors .date,
+.sponsors .date_head1,
+.sponsors .readon {
+	display: none;
+}
+
+#show-link {
+    clear: both;
+    text-align: center;
+}
+
+#show-link .show {
+	display: block;
 }
 
 .date_head {
@@ -207,25 +265,21 @@ ul{
 }
 /*------------------------------------------------banner--------------------*/
 #banner{
-	width:1004px;
-	margin-top: 0;
-	margin-right: auto;
-	margin-bottom: 0;
-	margin-left: auto;
-	font-family: Georgia;
-	font-size: 11px;
-	font-style: normal;
-	line-height: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	color: #908b51;
-	text-decoration: none;
-	float: none;
-	padding: 0px;
-	height: 298px;
-	background-image: url(../images/banner.jpg);
-	background-repeat: no-repeat;
+    background: url("../images/banner.png") no-repeat;
+    color: #908B51;
+    float: none;
+    font-family: Georgia;
+    font-size: 11px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    height: 298px;
+    line-height: normal;
+    margin: 0 auto;
+    padding: 0;
+    text-decoration: none;
+    text-transform: none;
+    width: 1004px;
 }
 .banner_textarea {
 	font-family: Arial;
@@ -358,6 +412,12 @@ ul{
 	padding-left: 0px;
 }
 /*------------------------------------------------body_area--------------------*/
+#body-container {
+    background: url("../images/home-shadow.jpg") repeat-x scroll 0 0 #E4E7D4;
+    padding-top: 20px;
+    width: 100%;
+}
+
 #body_area{
 	width:1004px;
 	margin-top: 0;
@@ -382,13 +442,13 @@ ul{
 	margin: 0 auto;
 }
 
-#innerbody_area{
+#innerbody_area {
     background-attachment: scroll;
     background-color: #E4E7D4;
     background-image: url("../images/inner_bodybg.jpg");
     background-position: center top;
     background-repeat: repeat-x;
-    color: #908B51;
+    color: #6F745E;
     float: left;
     font-family: Georgia;
     font-size: 11px;
@@ -402,6 +462,10 @@ ul{
     text-decoration: none;
     text-transform: none;
     width: 1004px;
+}
+
+#innerbody_area .contentheading {
+	color: #3C341F;
 }
 
 .industries_area,
@@ -440,6 +504,19 @@ ul{
 	padding-bottom: 10px;
 	padding-left: 0px;
 }
+.right_textarea .blog .contentheading,
+.right_textarea .leading p:last-child {
+    background-image: none;
+    float: none;
+    text-align: left;
+    width: 100%;
+}
+
+.right_textarea .leading p:last-child,
+.right_textarea .blog p {
+	width: 650px;
+}
+
 .leading p {
 	font-family: Arial;
 	font-size: 16px;

@@ -34,11 +34,25 @@ function modChrome_beezDivision($module, &$params, &$attribs)
 	<?php endif;
 }
 
-function modChrome_takeActonAndSponsors($module, &$params, &$attribs)
+function modChrome_takeActionAndMaritimeEnvironment($module, &$params, &$attribs)
 {
 	$headerLevel = isset($attribs['headerLevel']) ? (int) $attribs['headerLevel'] : 3;
 	if (!empty ($module->content)) : ?>
 		<div class="moduletable<?php echo $params->get('moduleclass_sfx'); ?> take-action-and-sponsors">
+			<?php if ($module->showtitle) : ?>
+				<h<?php echo $headerLevel; ?>><?php echo $module->title; ?></h<?php echo $headerLevel; ?>>
+			<?php endif; 
+			?>
+			<?php echo $module->content; ?>
+		</div>
+	<?php endif;
+}
+
+function modChrome_Sponsors($module, &$params, &$attribs)
+{
+	$headerLevel = isset($attribs['headerLevel']) ? (int) $attribs['headerLevel'] : 3;
+	if (!empty ($module->content)) : ?>
+		<div class="moduletable<?php echo $params->get('moduleclass_sfx'); ?> sponsors">
 			<?php if ($module->showtitle) : ?>
 				<h<?php echo $headerLevel; ?>><?php echo $module->title; ?></h<?php echo $headerLevel; ?>>
 			<?php endif; 

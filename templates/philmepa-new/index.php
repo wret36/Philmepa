@@ -8,14 +8,18 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<jdoc:include type="head" />
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>TemplateWorld.com Template - Industrial</title>
 <link href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template;?>/css/style.css" rel="stylesheet" type="text/css" />
 <link href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template;?>/css/innerstyle.css" rel="stylesheet" type="text/css" />
 </head>
 
-<body>
+<body <?= $pageview == "frontpage" ? "" : "class='inner-page'" ?>>
  <div id="logo_banner">
+ 	<div id="logo_container">
+ 		<img src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template;?>/images/logo.png" alt="" />
+ 	</div>
    <div class="menu_area">
 	 <jdoc:include type="modules" name="primary-menu" />
    </div>
@@ -46,17 +50,21 @@
       <br/>
     </div>
   </div>
-  <div id="body_area">
-    <div class="home-content">
-    	<jdoc:include type="component" />
-    </div>
-    <jdoc:include type="modules" name="take-action-and-sponsors" style="takeActonAndSponsors" headerLevel="5"  />
-  </div>
+	<div id="body-container">
+		<div id="body_area">
+			<div class="home-content">
+				<jdoc:include type="component" />
+			</div>
+			<jdoc:include type="modules" name="take-action-and-sponsors" style="takeActionAndMaritimeEnvironment"/>
+			<jdoc:include type="modules" name="sponsor" style="Sponsors"/>  
+		</div>
+	</div>
   <?php else :?>
 	<div id="main-content">
 		<div id="innerbody_area">
 			<div class="industries_area">
-				<jdoc:include type="modules" name="take-action-and-sponsors" style="takeActonAndSponsors" headerLevel="5"  />  	
+				<jdoc:include type="modules" name="take-action-and-sponsors" style="takeActionAndMaritimeEnvironment"/>
+				<jdoc:include type="modules" name="sponsor" style="Sponsors"/>  	
 			</div>
 			<div class="right_textarea">
 				<jdoc:include type="component" /> 	
