@@ -1,6 +1,3 @@
-@charset "utf-8";
-/* CSS Document */
-
 body{
 	margin:0;
 	color:#232323;
@@ -11,6 +8,10 @@ body{
 	background-color: #f1e5bb;
 	background-attachment: scroll;
 	background: url(../images/bg.jpg) repeat-x top;
+}
+
+img {
+	border: none;
 }
 
 body.inner-page {
@@ -88,6 +89,7 @@ ul{
 .menu li a:hover,
 .menu li.active a {
 	background-image: url(../images/menu_hover.png);
+	color: #3C341F;
 }
 .menu_hover {
 	font-family: Arial;
@@ -175,11 +177,11 @@ ul{
     width: 100px;
 }
 
-.sponsors-list a p * {
+.sponsors-list p {
 	display: none;
 }
 
-.sponsors-list a p img {
+.sponsors-list p.image-container {
 	display: block;
 }
 
@@ -322,7 +324,8 @@ ul{
 	padding-bottom: 10px;
 	padding-left: 10px;
 }
-.searchname {
+.search label {
+	display: none;
 	font-family: Arial;
 	font-size: 20px;
 	font-weight: normal;
@@ -336,34 +339,31 @@ ul{
 	padding-bottom: 0px;
 	padding-left: 10px;
 }
-.searchbox {
-	font-family: Arial;
-	font-size: 20px;
-	font-weight: normal;
-	color: #6f745e;
-	text-decoration: none;
-	margin: 0px;
-	float: left;
-	height: 30px;
-	padding-top: 0px;
-	padding-right: 10px;
-	padding-bottom: 0px;
-	padding-left: 0px;
-	width: 290px;
+#mod_search_searchword {
+    color: #6F745E;
+    float: left;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: normal;
+    height: 30px;
+    margin: -2px 0 0;
+    padding: 0 10px 0 0;
+    text-decoration: none;
+    width: 430px;
 }
-.searchgo {
-	font-family: Arial;
-	font-size: 20px;
-	font-weight: normal;
-	color: #6f745e;
-	text-decoration: none;
-	margin: 0px;
-	float: left;
-	height: 30px;
-	padding-top: 0px;
-
-	padding-bottom: 0px;
-	padding-left: 0px;
+.search .button {
+    border: medium none;
+    color: #6F745E;
+    float: left;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: normal;
+    height: 30px;
+    margin: 0 0 0 14px;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-top: 0;
+    text-decoration: none;
 }
 .search_textbox {
 	font-family: Arial;
@@ -464,7 +464,8 @@ ul{
     width: 1004px;
 }
 
-#innerbody_area .contentheading {
+#innerbody_area .contentheading,
+#innerbody_area .componentheading {
 	color: #3C341F;
 }
 
@@ -478,7 +479,9 @@ ul{
 }
 
 .right_textarea {
-	width: 700px;
+    font-size: 14px;
+    padding: 10px;
+    width: 680px;
 }
 .home-content {
 	margin: 0px;

@@ -12,7 +12,6 @@
 <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
 <title>TemplateWorld.com Template - Industrial</title>
 <link href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template;?>/css/style.css" rel="stylesheet" type="text/css" />
-<link href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template;?>/css/innerstyle.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body <?= $pageview == "frontpage" ? "" : "class='inner-page'" ?>>
@@ -30,23 +29,16 @@
 	<?php if($pageview == "frontpage") :?>
   <div id="banner">
     <div class="banner_textarea"> 
-      <p class="banner_head">Libero Tempor Soluta Nobis</p>
-      <p class="banner_head1">Itaque earum rerum hic tenetur a sapiente</p>
+	    <p class="banner_head">Protection of the Marine Environment</p>
+	    <p class="banner_head1">Click <a href="/index.php?option=com_content&amp;view=article&amp;id=4:take-action-ways-you-can-help&amp;catid=12:take-action-and-maritime-environment">here</a> or <a href="/index.php?option=com_contact&amp;view=contact&amp;id=1&amp;Itemid=8">contact us</a> for more details!</p>
+	    <p></p>
+	    <p>When our power of choice is untrammelled and when nothing prevents our being able to do what we like best. But in certain circumstances and owing to the claims <br />
+	    of duty or the obligations to our environment and society.
+		</p>
       <p></p>
-      <p>When our power of choice is untrammelled and when nothing prevents our being able to do what we like best. But in certain circumstances and owing to the claims <br />
-      of duty or the obligations of business.</p>
-      <p></p>
-      <div class="search_area">
-        <div class="searchname">Industry Search</div>
-        <div class="searchbox">
-          <label>
-          <input name="textfield" type="text" class="search_textbox" />
-          </label>
-        </div>
-        <div class="searchgo">
-          <div align="center"><a href="#" class="go">GO</a></div>
-        </div>
-      </div>
+		<div class="search_area">
+			<jdoc:include type="modules" name="search" />
+		</div>
       <br/>
     </div>
   </div>
@@ -74,7 +66,7 @@
   <?php endif;?>
   <div id="fotter">
     <div class="fotter_links">
-      <div align="center"><a href="#" class="fotterlink">home</a>  :  <a href="#" class="fotterlink">history</a>  :  <a href="#" class="fotterlink">services</a>  :  <a href="#" class="fotterlink">news</a>  :  <a href="#" class="fotterlink">sitemap</a>  :  <a href="#" class="fotterlink">contact</a></div>
+      <jdoc:include type="modules" name="footer" />
     </div>
     <div class="fotter_copyrights">
       <div align="center">&copy; Copyright Information Goes Here. All Rights Reserved.</div>
